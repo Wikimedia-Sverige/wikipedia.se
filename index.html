@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>wikipedia.se - Wikipedia, den fria encyklopedin</title>
+	<link rel="stylesheet" media="screen" type="text/css" href="./style.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body onload="self.focus();document.getElementById('txtSearch').focus();">
+	<table id="head" border="0" cellpadding="0" cellspacing="0" style="width:100%">
+		<tr>
+			<td style="text-align:left; vertical-align:top;">
+				Huvudsidan till svenskspråkiga Wikipedia hittar du på <a href="http://sv.wikipedia.org/">http://sv.wikipedia.org/</a>.
+			</td>
+		</tr>
+	</table>
+	<div id="main">
+		<p id="langs">
+			<a data-lang-code="ar" title="Wikipedia på arabiska">العربية</a>
+			<a data-lang-code="bs" title="Wikipedia på bosniska">Bosanski</a>
+			<a data-lang-code="da" title="Wikipedia på danska">Dansk</a>
+			<a data-lang-code="fi" title="Wikipedia på finska">Suomi</a>
+			<a data-lang-code="ku" title="Wikipedia på kurdiska">Kurdî/كوردی</a>
+			<a data-lang-code="no" title="Wikipedia på norska (bokmål)">‪Norsk</a>
+			<a data-lang-code="fa" title="Wikipedia på persiska">فارسی</a>
+			<a data-lang-code="se" title="Wikipedia på samiska">Sámegiella</a>
+			<a data-lang-code="sr" title="Wikipedia på serbiska">Српски/Srpski</a>
+			<a data-lang-code="es" title="Wikipedia på spanska">Español</a>
+			<a data-lang-code="sv" title="Wikipedia på svenska">Svenska</a>
+			<a data-lang-code="de" title="Wikipedia på tyska">Deutsch</a>
+			<a class="external" href="http://wikipedia.org/">fler</a>
+		</p>
+		<div id="mainbox">
+			<div id="mainimage">
+				<a href="http://sv.wikipedia.org/">
+					<img src="img/logo.png" title="Wikipedia, den fria encyklopedin" alt="Wikipedia, den fria encyklopedin" />
+				</a>
+			</div>
+
+			<div id="maincontent">
+				<h3 id="searchtitle">Sök i Wikipedia</h3>
+				<div id="form">
+					<form id="frmSearch" action="http://sv.wikipedia.org/wiki/Special:Search" method="get" accept-charset="UTF-8" name="frmSearch">
+						<input type="text" id="txtSearch" name="search" alt="Search Criteria" autocomplete="off" />
+						<input type="hidden" name="l" id="l" value="sv" />
+						<input type="hidden" name="e" value="wikipedia" />
+						<input type="hidden" name="s" value="sök" />&nbsp;
+						<input type="submit" id="cmdSearch" name="b" value="Sök" alt="Börja sök" />
+					</form>
+				</div>
+
+				<div id="search_suggest"></div>
+			</div>
+		</div>
+		<!-- 
+		<div class="featurebox">
+			<table class="feature-wrapper" style="margin-top:2em; min-width:45em;" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="feature" valign="top" style="background-color:#ffffff;">
+						<table class="featurebox-grid plainlinks">
+							<tr>
+								<td class="featurebox-text-cell" style="">
+									<p style="color: #575757; font-size:35pt; line-height:40pt; font-family: 'Times New Roman', Times, serif;">
+										Danke an alle Spender und Unterstützer!
+									</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="featurebox">
+			<table width="400" class="feature-wrapper" style="margin-top:2em; min-width:45em;" border="0" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="feature" valign="top" style="background-color:#ffffff;">
+						<table class="featurebox-grid plainlinks" style="width:45em">
+							<tr>
+								<td class="featurebox-image-cell" style="width:210px">
+									<div class="featurebox-image-wrapper">
+										<div class="featurebox-image">
+											<a href="http://www.wikimedia.at/ihre-spende-hilft">
+											<img alt="" src="http://www.wikimedia.at/sites/all/themes/wikimedia/images/spenden_btn.png" border="0" /></a>
+										</div>
+									</div>
+								</td>
+
+								<td class="featurebox-text-cell">
+									<h2><span class="mw-headline"><a href="http://www.wikimedia.at/ihre-spende-hilft" title="http://www.wikimedia.at/ihre-spende-hilft">Unterstützen auch Sie Wikimedia mit einer Spende</a></span></h2>
+									<p>Unterstützen Sie Wikimedia Österreich mit einer Spende und helfen Sie uns "Freies Wissen" zu fördern!<a href="http://www.wikimedia.at/ihre-spende-hilft" class="external text" title="http://www.wikimedia.at/ihre-spende-hilft"></p>
+								</td>
+							</tr>
+							<tr>
+								<td class="featurebox-image-cell" style="width:210px">
+									<div class="featurebox-image-wrapper">
+										<div class="featurebox-image">
+											<a href="http://www.wikimedia.at/">
+											<img alt="" src="http://www.wikimedia.at/sites/all/themes/wikimedia/logo.png" border="0" /></a>
+										</div>
+									</div>
+								</td>
+								<td class="featurebox-text-cell">
+									<h2><span class="mw-headline"><a href="http://www.wikimedia.at" title="http://www.wikimedia.at">Wikimedia Österreich</a></span></h2>
+									<p>Wikimedia Österreich ist ein unabhängiger gemeinnütziger Verein, der sich der Förderung freien Wissens verschrieben hat.</p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		-->
+		<div id="bottombox"></div>
+	</div>
+	<div id="donationfooter">
+		<div id="footer-left">
+		    <a href="http://www.wikimedia.se">Wikimedia Sverige</a>
+		</div>
+		<div id="footer-left">
+		    <a href="http://www.wikimedia.se">
+		        <img src="img/wikimedia-button.png" border="0" alt="Ett Wikimedia projekt" title="Ett Wikimedia projekt" />
+		    </a>
+		</div>
+        <div id="footer-left">
+		    <a href="cookieinfo.html" style="font-size:70%;">Om kakor</a>
+		</div>
+	</div>
+</body>
+</html>
