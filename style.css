@@ -49,7 +49,7 @@ h3 {
 	margin: 0;
 	padding: 0;
 	margin-top: 0.7em;
-	margin-bottom: 0.7em;	
+	margin-bottom: 0.7em;
 	font-size: 10pt;
 	font-family: arial;
 	font-style: bold;
@@ -75,7 +75,7 @@ h3 {
 	-moz-opacity: 1.0;
 }
 #search_suggest {
-	width: 23em;
+	width: 28em;
 	margin: 0px;
 	padding: 0px;
 	position: absolute;
@@ -123,14 +123,9 @@ h3 {
 	text-align: center;
 }
 
-#langs {
-	margin-bottom: 0.5em;
-	font-size: 9pt;
-}
 
-#mainbox {
+.box {
 	background: #fff;
-	width: 53em;
 	margin: 0 auto 10px;
 	border: 1px solid #999;
 	padding: 1.5em;
@@ -141,6 +136,53 @@ h3 {
 	-ms-border-radius: 8px;
 	-o-border-radius: 8px;
 	border-radius: 8px;
+}
+
+#mainbox {
+    width: 57em;
+}
+
+#langs {
+	margin-bottom: 0.5em;
+	font-size: 9pt;
+}
+
+#donate-link {
+    text-decoration: initial;
+    color: initial;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #FFF; /* Fix to make div clickable in IE */
+    opacity: 0; /* Fix to make div clickable in IE */
+    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+}
+
+#donate-box {
+    width: 37em;
+    position: relative;
+    margin-top: 5em;
+}
+
+#donate-box .yellow {
+    background: #FFCC00; /* knapp_test_2 */
+}
+
+#donate-box:hover {
+	background-color: #e5eefc;
+    border-color: 73a9fc;
+}
+
+#donate-box p {
+    font-size: 130%;
+}
+
+#click-here {
+    text-decoration: underline;
+    color: blue;
 }
 
 div.featurebox {
@@ -161,7 +203,6 @@ div.featurebox {
 
 .feature {
 	background-color: #ffffff;
-	
 }
 
 .featurebox-grid td {
@@ -288,7 +329,7 @@ form {
 #txtSearch {
 	background-color: #eee;
 	border: 1px solid #ccc;
-	width: 23em;
+	width: 25em;
 	padding: 1px;
 }
 
@@ -427,3 +468,4 @@ input {
 #container {
 	min-height: 400px;
 }
+
